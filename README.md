@@ -44,7 +44,6 @@ server-charts/rancher
 helm template rancher \
 --set hostname=rancher.trinasolar.com \
 --namespace cattle-system \
---set service.ports.nodePort=30080 \
 --set rancherImage=cnrancher/rancher \
 --set rancherImageTag=v2.3.8-ent \
 --set auditLog.destination=hostPath \
