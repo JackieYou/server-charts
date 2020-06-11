@@ -1,5 +1,4 @@
 {{- if eq .Values.service.type "NodePort" }}
-{{- if eq .Values.tls "external" }}
 apiVersion: v1
 kind: Service
 metadata:
@@ -18,5 +17,4 @@ spec:
   type: clusterIP
   selector:
     app: {{ template "rancher.fullname" . }}
-{{- end }}
 {{- end }}
