@@ -3,7 +3,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ template "rancher.fullname"-grpc . }}
+  name: {{ template "rancher.fullname" . }}-grpc
   labels:
     app: {{ template "rancher.fullname" . }}
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
