@@ -1,4 +1,4 @@
-# nginx_l7_443(tls)->ingress_80->rancher_80
+# nginx_l7_443(tls)-->ingress_80-->rancher_80
 
 ```
 helm install rancher \
@@ -17,7 +17,7 @@ helm install rancher \
 server-charts/rancher
 ```
 
-# nginx_l7_443(tls)->nodeport_30080->rancher_80
+# nginx_l7_443(tls)-->nodeport_30080-->rancher_80
 
 ```
 helm install rancher \
@@ -38,7 +38,7 @@ helm install rancher \
 server-charts/rancher
 ```
 
-# nginx_l4_443->ingress_443(tls)->rancher_80
+# nginx_l4_443-->ingress_443(tls)-->rancher_80
 
 ```
 helm install rancher \
@@ -56,7 +56,7 @@ helm install rancher \
 server-charts/rancher
 ```
 
-# nginx_l4_443->nodeport_30443->rancher_443(tls)
+# nginx_l4_443-->nodeport_30443-->rancher_443(tls)
 
 ```
 helm install rancher \
