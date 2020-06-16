@@ -75,3 +75,10 @@ helm install rancher \
 --set privateCA=true \
 server-charts/rancher
 ```
+
+# extraEnv
+--set 'extraEnv[0].name=PANDARIA_LOGIN_RATELIMIT'
+--set 'extraEnv[0].value=0.2'
+
+--set 'extraEnv[1].name=PANDARIA_LOGIN_COOLDOWN'
+--set 'extraEnv[1].value=60s'
