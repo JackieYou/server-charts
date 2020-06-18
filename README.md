@@ -24,7 +24,7 @@ helm install rancher \
 --set hostname=<your hostname> \
 --namespace cattle-system \
 --set service.type=NodePort \
---set service.ports.nodePort=300080 \
+--set service.ports.nodePort=30080 \
 --set rancherImage=cnrancher/rancher \
 --set rancherImageTag=v2.3.8-ent \
 --set auditLog.destination=hostPath \
@@ -63,7 +63,7 @@ helm install rancher \
 --set hostname=<your hostname> \
 --namespace cattle-system \
 --set service.type=NodePort \
---set service.ports.nodePort=300443 \
+--set service.ports.nodePort=30443 \
 --set rancherImage=cnrancher/rancher \
 --set rancherImageTag=v2.3.8-ent \
 --set auditLog.destination=hostPath \
